@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include acme_challenge/templates *
+recursive-include acme_challenge/tests *
