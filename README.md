@@ -1,5 +1,7 @@
 # django-acme-challenge
 
+[![Build Status](https://travis-ci.org/jamstooks/django-acme-challenge.svg?branch=master)](https://travis-ci.org/jamstooks/django-acme-challenge)
+
 A quick tool to serve the acme-challenge verification page. When creating an SSL certificate with Let's Encrypt, you need to serve a page that they request to confirm you own the site:
 
     Make sure your web server displays the following content at
