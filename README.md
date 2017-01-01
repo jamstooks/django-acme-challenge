@@ -13,6 +13,8 @@ This app provides a quick way to serve that page.
 
 ## Installation
 
+    pip install https://github.com/jamstooks/django-acme-challenge/archive/v1.0.zip
+
 Add `'acme_challenge',` to your installed apps and update your urls.py:
 
     url(r'^.well-known/acme-challenge/', include('acme_challenge.urls')),
