@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from views import ACMEChallengeView
+from .views import ACMEChallengeView
 
 urlpatterns = [
     url(
