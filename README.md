@@ -19,7 +19,7 @@ PyPI:
     
 Github:
 
-    pip install https://github.com/jamstooks/django-acme-challenge/archive/v1.1.zip
+    pip install https://github.com/jamstooks/django-acme-challenge/archive/v1.2.zip
 
 Add `'acme_challenge',` to your installed apps and update your urls.py:
 
