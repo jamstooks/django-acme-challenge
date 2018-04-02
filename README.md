@@ -9,7 +9,7 @@ A quick tool to serve the acme-challenge verification page. When creating an SSL
 
     l9msb_LONG_STRING.LONG_STRING
 
-This app provides a quick way to serve that page.
+This app provides a quick way to serve and update that page from two environment variables.
 
 ## Installation
 
