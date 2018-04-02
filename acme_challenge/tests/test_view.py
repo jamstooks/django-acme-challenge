@@ -9,18 +9,22 @@ __all__ = (
     'ViewTest',
 )
 
+SLUG = 'test'
+CONTENT = 'test content'
+
+
 class ViewTest(TestCase):
 
     def setUp(self):
         """
             Set the settings variables
         """
-        settings.ACME_CHALLENGE_URL_SLUG = "test"
-        settings.ACME_CHALLENGE_TEMPLATE_CONTENT = "test content"
+        settings.ACME_CHALLENGE_URL_SLUG = SLUG
+        settings.ACME_CHALLENGE_TEMPLATE_CONTENT = CONTENT
         
     def testView(self):
         c = Client()
-        response = c.get("/test")
-        self.assertEqual(response.content, "test content")
+        response = c.get("/%s" % SLUG)
+        self.assertEqual(response.content.decode(), CONTENT)
         response = c.get("/test2")
         self.assertEqual(response.status_code, 404)

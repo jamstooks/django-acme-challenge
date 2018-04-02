@@ -15,10 +15,7 @@ setup(
     author_email='ben.stookey@gmail.com',
     url='https://github.com/jamstooks/django-acme-challenge',
     long_description=read("README.md"),
-    packages=[
-        'acme_challenge',
-        'acme_challenge.tests'
-        ],
+    packages=find_packages(),
     include_package_data=True,
     classifiers=[
         'Environment :: Web Environment',
