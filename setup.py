@@ -9,7 +9,7 @@ def read(fname):
 
 setup(
     name='django-acme-challenge',
-    version='1.0',
+    version='1.2',
     description="A quick tool to serve the acme-challenge verification page.",
     author='Benjamin W Stookey',
     author_email='ben.stookey@gmail.com',
@@ -22,8 +22,8 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
         'Framework :: Django',
     ],
     test_suite='tests.main',

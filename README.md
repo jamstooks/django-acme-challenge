@@ -13,7 +13,13 @@ This app provides a quick way to serve that page.
 
 ## Installation
 
-    pip install https://github.com/jamstooks/django-acme-challenge/archive/v1.0.zip
+PyPI:
+
+    pip install django-acme-challenge
+    
+Github:
+
+    pip install https://github.com/jamstooks/django-acme-challenge/archive/v1.1.zip
 
 Add `'acme_challenge',` to your installed apps and update your urls.py:
 
@@ -26,4 +32,10 @@ Just set two variables:
   - `ACME_CHALLENGE_URL_SLUG`
   - `ACME_CHALLENGE_TEMPLATE_CONTENT`
   
-`http://your-domain-name/.well-known/acme-challenge/ACME_CHALLENGE_URL_SLUG` will then serve the value of `ACME_CHALLENGE_TEMPLATE_CONTENT` for validation.
+`http://your-domain-name/.well-known/acme-challenge/ACME_CHALLENGE_URL_SLUG`
+will then serve the value of `ACME_CHALLENGE_TEMPLATE_CONTENT`
+for validation.
+
+### Compatibility
+
+Support Django 1.8 - 2.0 and Python 2 & 3
