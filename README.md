@@ -9,7 +9,7 @@ A quick tool to serve the acme-challenge verification page. When creating an SSL
 
     l9msb_LONG_STRING.LONG_STRING
 
-This app provides a quick way to serve and update that page from two environment variables.
+This app provides a quick way to serve and update that page from two settings variables.
 
 ## Installation
 
@@ -21,13 +21,13 @@ Github:
 
     pip install https://github.com/jamstooks/django-acme-challenge/archive/v1.2.zip
 
+### Settings
+
 Add `'acme_challenge',` to your installed apps and update your urls.py:
 
     url(r'^.well-known/acme-challenge/', include('acme_challenge.urls')),
 
-### Settings
-
-Just set two variables:
+Just set two variables (I like to assign these with env vars, personally):
 
   - `ACME_CHALLENGE_URL_SLUG`
   - `ACME_CHALLENGE_TEMPLATE_CONTENT`
